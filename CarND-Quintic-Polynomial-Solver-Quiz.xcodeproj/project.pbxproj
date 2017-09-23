@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A64F41351F765BF6009EBBD9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A64F41341F765BF6009EBBD9 /* main.cpp */; };
+		A64F413D1F76605E009EBBD9 /* solution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A64F413C1F76605E009EBBD9 /* solution.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		A64F41311F765BF6009EBBD9 /* CarND-Quintic-Polynomial-Solver-Quiz */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CarND-Quintic-Polynomial-Solver-Quiz"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64F41341F765BF6009EBBD9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A64F413B1F765DF0009EBBD9 /* Eigen-3.3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Eigen-3.3"; sourceTree = SOURCE_ROOT; };
+		A64F413C1F76605E009EBBD9 /* solution.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = solution.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				A64F41341F765BF6009EBBD9 /* main.cpp */,
+				A64F413C1F76605E009EBBD9 /* solution.cpp */,
+				A64F413B1F765DF0009EBBD9 /* Eigen-3.3 */,
 			);
 			path = "CarND-Quintic-Polynomial-Solver-Quiz";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A64F413D1F76605E009EBBD9 /* solution.cpp in Sources */,
 				A64F41351F765BF6009EBBD9 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,16 +238,34 @@
 		A64F41391F765BF6009EBBD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					/usr/local/include,
+					"/Users/knuttungland/src/CarND-Quintic-Polynomial-Solver-Quiz/Eigen-3.3",
+					/usr/local/opt/openssl/include,
+					"/Users/knuttungland/src/CarND-Quintic-Polynomial-Solver-Quiz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "/usr/local/include /Users/knuttungland/src/CarND-Quintic-Polynomial-Solver-Quiz/Eigen-3.3 /usr/local/opt/openssl/include /Users/knuttungland/src/CarND-Quintic-Polynomial-Solver-Quiz";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
 		A64F413A1F765BF6009EBBD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					/usr/local/include,
+					"/Users/knuttungland/src/CarND-Quintic-Polynomial-Solver-Quiz/Eigen-3.3",
+					/usr/local/opt/openssl/include,
+					"/Users/knuttungland/src/CarND-Quintic-Polynomial-Solver-Quiz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "/usr/local/include /Users/knuttungland/src/CarND-Quintic-Polynomial-Solver-Quiz/Eigen-3.3 /usr/local/opt/openssl/include /Users/knuttungland/src/CarND-Quintic-Polynomial-Solver-Quiz";
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
